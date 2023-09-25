@@ -118,28 +118,49 @@
                 </div>
             </div>
         </section>
-        <section id="team" class="team">
+        <section id="Team" class="team">
             <h2>Náš tým</h2>
             <div class="team-cont">
-                <div class="member">
+                <a href="https://brainvr.cz/iveta-fejnarova" class="member">
                     <img class="member-thumbnail" src="images/member_01.png"/>
                     <p class="member-name">Iveta Fajnerová</p>
-                </div>
-                <div class="member">
+                </a>
+                <a href="https://brainvr.cz/iveta-fejnarova" class="member">
                     <img class="member-thumbnail" src="images/member_01.png"/>
                     <p class="member-name">Iveta Fajnerová</p>
-                </div>
-                <div class="member">
+                </a>
+                <a href="https://brainvr.cz/iveta-fejnarova" class="member">
                     <img class="member-thumbnail" src="images/member_01.png"/>
                     <p class="member-name">Iveta Fajnerová</p>
-                </div>
-                <div class="member">
+                </a>
+                <a href="https://brainvr.cz/iveta-fejnarova" class="member">
                     <img class="member-thumbnail" src="images/member_01.png"/>
                     <p class="member-name">Iveta Fajnerová</p>
-                </div>
+                </a>
             </div>
         </section>
-        <section id="outputs" class="outputs">
+        <section id="Team" class="team">
+            <h2>Terapeuti</h2>
+            <div class="team-cont">
+                <a href="https://brainvr.cz/iveta-fejnarova" class="member">
+                    <img class="member-thumbnail" src="images/member_01.png"/>
+                    <p class="member-name">Iveta Fajnerová</p>
+                </a>
+                <a href="https://brainvr.cz/iveta-fejnarova" class="member">
+                    <img class="member-thumbnail" src="images/member_01.png"/>
+                    <p class="member-name">Iveta Fajnerová</p>
+                </a>
+                <a href="https://brainvr.cz/iveta-fejnarova" class="member">
+                    <img class="member-thumbnail" src="images/member_01.png"/>
+                    <p class="member-name">Iveta Fajnerová</p>
+                </a>
+                <a href="https://brainvr.cz/iveta-fejnarova" class="member">
+                    <img class="member-thumbnail" src="images/member_01.png"/>
+                    <p class="member-name">Iveta Fajnerová</p>
+                </a>
+            </div>
+        </section>
+        <section id="Outputs" class="outputs">
             <h2>Výstupy</h2>
             <div class="outputs-subcategory">
                 <a id="aplOutputsButton" class="subcategory-header">
@@ -167,6 +188,14 @@
                 </div>
             </div>
         </section>
+        <section id="Team" class="team">
+            <h2>Kontakty</h2>
+            <h3>Zájem o software</h3>
+            <p>asdf@brainvr.cz</p>
+            <h3>Zájem o terapii</h3>
+            <p>asdf@brainvr.cz</p>
+        </section>
+    </main>
     <footer>
         <div class="top-footer">
             <img class="logos tacr" src="images/logo-tacr.png"/>
@@ -196,6 +225,10 @@
                 aadaptiveHeight: true
             });
 
+            $("#menu li").click(function() {
+                $("html, body").animate({ scrollTop: $("" + $(this).data()[""]).offset().top }, 300);
+            });
+
             /*$("#menuOnHidden").click(function() {
             $("#menuOnHidden").toggle();
             $("#menu").slideToggle(300);
@@ -204,16 +237,8 @@
                 $("#menu").slideToggle(300, function() {
                     $("#menuOnHidden").toggle();
                 });
-            });
-            $("#menu li").click(function() {
-                $("#menu").toggle();
-                $("#menuOnHidden").toggle();
-                $("html, body").animate({ scrollTop: $("" + $(this).data()[""]).offset().top }, 300);
-            });
-            $("#programButton").click(function() {
-                $("html, body").animate({ scrollTop: $("#programLink").offset().top }, 300);
             });*/
-            /**/
+            
         });
         
     </script>
