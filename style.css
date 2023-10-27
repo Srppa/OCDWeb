@@ -18,7 +18,8 @@ main{
 .goals,
 .aplications,
 .team,
-.outputs{
+.outputs,
+.terapeuts{
 
     width: 1240px;
     max-width: 100%;
@@ -38,13 +39,37 @@ header{
     align-items: center;
 }
 
-.logo-brainvr {
-    height: 75px;
+header .logo-brainvr {
+    height: 70px;
 }
 
-.logo-nudz{
+header .logo-brainvr img {
+    height: 70px;
+}
+
+header .logo-nudz{
     height: 65px;
     margin-left: 10px;
+}
+
+header .logo-nudz img {
+    height: 65px;
+}
+
+header .logo-sic img {
+    height: 65px;
+}
+
+header .nav-bar .logos{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+header .nav-bar .logos > a{
+    margin-left: 13px;
+    
 }
 
 .nav-bar{
@@ -115,16 +140,46 @@ main{
 
 .goals-main-text{
     font-size: 22px;
+    color: #000;
 }
 
 .goals-grant-text{
     font-size: 16px;
 }
 
+.goals-logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 60px;
+}
+
+.goals-logos .tacr{
+    margin-right: 30px;
+}
+
+.stimulus-carousel p {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
 .slick-prev:before,
 .slick-next:before {
     color: #2C3161 !important;
 }
+
+.slick-slide {
+    height:200px;
+    margin: auto;
+ }
+ 
+ .slick-slide img {
+    height:215px;
+    margin: auto;
+ }
 
 .scenarios-title{
     margin-top: 150px;
@@ -134,12 +189,24 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
 }
 
 .scenario-cont{
     width: 47%;
     margin: 0 15px 20px 0;
+}
+
+.scenario-cont-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scenario-cont-header .arrow{
+    width: 20px;
+    margin-right: 5px;
 }
 
 .scenario-cont img{
@@ -160,23 +227,44 @@ main{
 }
 
 .scenario-cont .text-cont p{
+    display: none;
     margin-top: 5px;
     margin-bottom: 0px;
 }
 
 .team-cont{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .member{
     width: 25%;
-    margin: 0 10px;
     text-decoration: none;
     color: #000;
 }
 
 .member img{
-    max-width: 100%;
+    max-width: 95%;
+    width: 95%;
+}
+
+.outputs a{
+    text-decoration: none;
+}
+
+.outputs a .publication-name{
+    color: #2C3161;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.outputs a .publication-header{
+    color: #3c3539;
+    font-size: 16px;
+    margin-top: 0px;
+
 }
 
 .outputs-subcategory{
@@ -214,10 +302,27 @@ main{
     font-size: 22px;
 }
 
-.team p{
+.team .member-name{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.team .member-role{
     margin-top: 0px;
     margin-bottom: 30px;
-    font-size: 18px;
+    font-size: 15px;
+    color: #2C3161;
+    font-style: italic;
+}
+
+.contact{
+    text-align: center;
+}
+
+.terapeuts p{
+    font-size: 22px;
+    color: #000;
 }
 
 footer{
@@ -234,8 +339,31 @@ footer{
     padding: 25px 0;
 }
 
-.top-footer > img{
+.top-footer > a > img{
     margin-bottom: 25px;
+    max-width: 95%;
+    max-height: 95%;
+}
+
+.top-footer .logo-brainvr{
+    margin-top: 20px;
+    width: 190px;
+}
+.top-footer .logo-nudz{
+    width: 220px;
+}
+.top-footer .logo-cvut{
+    width: 300px;
+}
+.top-footer .logo-tacr{
+    width: 220px;
+}
+.top-footer .logo-sic{
+    width: 220px;
+}
+
+.cvut{
+    max-width: 300px;
 }
 
 .bottom-footer{
@@ -243,6 +371,8 @@ footer{
     padding: 25px 0;
     color: #fff;
 }
+
+
 
 .bottom-footer{
     
