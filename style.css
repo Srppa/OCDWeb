@@ -19,6 +19,7 @@ main{
 .aplications,
 .team,
 .outputs,
+.scenarios,
 .terapeuts{
 
     width: 1240px;
@@ -134,6 +135,22 @@ main{
     color: #2C3161;
 }
 
+.aplications{
+    padding-bottom: 30px;
+    background-color: #D9D9D9;
+
+    width: 100%;
+
+    margin-bottom: 0px;
+}
+
+.aplication-inner{
+    width: 1240px;
+    max-width: 100%;
+
+    margin: auto;
+}
+
 .goals{
     margin-top: 70px;
 }
@@ -182,7 +199,7 @@ main{
  }
 
 .scenarios-title{
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .scenarios{
@@ -270,7 +287,7 @@ main{
 .outputs-subcategory{
     width: 100%;
     border-bottom: 3px solid #2c3161;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .subcategory-header{
