@@ -226,6 +226,25 @@ main{
     margin-right: 5px;
 }
 
+.scenario-cont .image-cont{
+    position: relative;
+}
+
+.scenario-cont .play{
+    position: absolute;
+    width: 70px;
+
+    left: calc(50% - 35px);
+    top: calc(50% - 25px);
+
+    fill: #fff;
+    stroke: #fff;
+}
+
+.scenario-cont video{
+    width: 100%;
+}
+
 .scenario-cont img{
     width: 100%;
 }

@@ -99,7 +99,11 @@
             <div class="scenarios">
                 <div class="scenario-cont">
                     <div class="image-cont">
-                        <img src="images/scenario_01.png"/>
+                        <video>
+                            <source src="images/kontaminace.mp4" type="video/mp4" loop>
+                            Váš prohlížeč nepodporuje formát videa
+                        </video>
+                        <img class="play" src="images/play-button.svg"/>
                     </div>
                     <div class="text-cont">
                         <div class="scenario-cont-header">
@@ -111,7 +115,11 @@
                 </div>
                 <div class="scenario-cont">
                     <div class="image-cont">
-                        <img src="images/scenario_01.png"/>
+                        <video>
+                            <source src="images/kontrola.mp4" type="video/mp4" loop>
+                            Váš prohlížeč nepodporuje formát videa
+                        </video> 
+                        <img class="play" src="images/play-button.svg"/>
                     </div>
                     <div class="text-cont">
                         <div class="scenario-cont-header">
@@ -123,7 +131,11 @@
                 </div>
                 <div class="scenario-cont">
                     <div class="image-cont">
-                        <img src="images/scenario_01.png"/>
+                        <video>
+                            <source src="images/symetrie.mp4" type="video/mp4" loop>
+                            Váš prohlížeč nepodporuje formát videa
+                        </video>
+                        <img class="play" src="images/play-button.svg"/>
                     </div>
                     <div class="text-cont">
                         <div class="scenario-cont-header">
@@ -135,7 +147,11 @@
                 </div>
                 <div class="scenario-cont">
                     <div class="image-cont">
-                        <img src="images/scenario_01.png"/>
+                        <video>
+                            <source src="images/hromadeni.mp4" type="video/mp4" loop>
+                            Váš prohlížeč nepodporuje formát videa
+                        </video>
+                        <img class="play" src="images/play-button.svg"/>
                     </div>
                     <div class="text-cont">
                         <div class="scenario-cont-header">
@@ -268,8 +284,18 @@
                 $(this).find(".text-cont > p").slideToggle("slow", function() {
                     $(this).parent().find(".arrow").toggleClass( "rotated" );
                 });
-            });
 
+                $(this).find(".play").toggle();
+
+
+                if ($(this).find("video").get(0).paused) {
+                    $(this).find("video").get(0).play();
+                    //$(this).find("video").get(0).controls = true;
+                } else {
+                    $(this).find("video").get(0).pause();
+                    //$(this).find("video").get(0).controls = false;
+                }
+            });
             
 
             $('.stimulus-carousel').slick({
