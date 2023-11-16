@@ -377,7 +377,7 @@
                 .then(() => {
                     $("#registraionForm").hide();
                     $("#registrationComplete").show();
-                    $("html, body").animate({ scrollTop: $("" + $("#Terapeuts").data()[""]).offset().top }, 300);
+                    $("html, body").animate({ scrollTop: $("#Terapeuts").offset().top }, 300);
                     
                 })
                 .catch((error) => alert(error));
