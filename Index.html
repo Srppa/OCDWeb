@@ -208,8 +208,8 @@
         </section>
         <section id="Terapeuts" class="terapeuts">
             <h2>Terapeuti</h2>
-            <p>Pokud máte zájem o software kontaktujte nás</p>
-            <form name="registration" class="registration" netlify action="/thanks">
+            <form id="registraionForm" name="registration" class="registration" netlify>
+                <p>Pokud máte zájem o software kontaktujte nás</p>
                 <div class="names-cont">
                     <div class="first-name-cont">
                         <label for="fName">Křestní jméno<span class="requiredAsterix">*</span></label>
@@ -247,6 +247,10 @@
 
                 <input class="form-submit" type="submit" value="Poslat">
             </form>
+            <div id="registrationComplete" class="registraion-complete">
+                <p>Děkujeme za Váš zájem.</p>
+                <p>Odpovědná osoba z našeho týmu se Vám na uvedený kontakt ozve co nejdříve to bude možné.</p>
+            </dib>
         </section>
         <section id="Outputs" class="outputs">
             <h2>Výstupy</h2>
@@ -370,7 +374,10 @@
                     headers: { "Content-Type": "application/x-www-form-urlencoded" },
                     body: new URLSearchParams(formData).toString(),
                 })
-                .then(() => alert("Thank you for your submission"))
+                .then(() => {
+                    $("#registraionForm").hide();
+                    
+                })
                 .catch((error) => alert(error));
             };
 
