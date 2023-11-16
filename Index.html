@@ -209,7 +209,7 @@
         <section id="Terapeuts" class="terapeuts">
             <h2>Terapeuti</h2>
             <p>Pokud máte zájem o software kontaktujte nás</p>
-            <form name="registration" class="registration" netlify>
+            <form name="registration" class="registration" netlify action="/thanks">
                 <div class="names-cont">
                     <div class="first-name-cont">
                         <label for="fName">Křestní jméno<span class="requiredAsterix">*</span></label>
@@ -358,6 +358,27 @@
                     $("#menuOnHidden").toggle();
                 });
             });*/
+
+            const handleSubmit = (event) => {
+                event.preventDefault();
+
+                const myForm = event.target;
+                const formData = new FormData(myForm);
+  
+                fetch("/", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: new URLSearchParams(formData).toString(),
+                })
+                .then(() => alert("Thank you for your submission"))
+                .catch((error) => alert(error));
+            };
+
+            document
+                .querySelector("form")
+                .addEventListener("submit", handleSubmit);
+
+        });
             
         });
         
