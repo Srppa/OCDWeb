@@ -501,7 +501,11 @@ input[type="checkbox"]:checked::before {
 
 .registraion-complete{
     display: none;
-    margin-top: 30px;
+    margin-top: 30;
+}
+
+.registraion-complete p{
+    font-size: 18px;
 }
 
 footer{

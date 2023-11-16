@@ -221,8 +221,8 @@
                     </div>
                 </div>
                 <label for="position">Pracovní pozice<span class="requiredAsterix">*</span></label>
-                <select name="position" id="position">
-                    <option selected disabled hidden>Vyberte</option>
+                <select name="position" id="position" required>
+                    <option value="" selected disabled hidden>Vyberte</option>
                     <option value="psychotherapist">Psychoterapeut</option>
                     <option value="psychologist">Psycholog</option>
                     <option value="psychiatrist">Psychiatr</option>
@@ -386,7 +386,6 @@
             document
                 .querySelector("form")
                 .addEventListener("submit", handleSubmit);
-            
         })      
     </script>
 </body>
