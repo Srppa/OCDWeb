@@ -35,7 +35,7 @@
                 <a href="https://www.nudz.cz/" target="_blank" class="logo-nudz">
                     <img  src="images/logo-nudz.png"/>
                 </a>
-                <a href="https://www.tacr.cz/" target="_blank" class="logo-nudz">
+                <a href="https://www.tacr.cz/" target="_blank" class="logo-tacr">
                     <img class="logos tacr" src="images/logo-tacr.png"/>
                 </a>
                 <a href="https://s-ic.cz/cs/" target="_blank" class="logo-sic">
@@ -208,8 +208,9 @@
         </section>
         <section id="Terapeuts" class="terapeuts">
             <h2>Terapeuti</h2>
+            <p id="formInfo" class="form-info">Pokud máte zájem o software kontaktujte nás</p>
+            <a id="formShow" class="form-show">Mám zájem</a>
             <form id="registraionForm" name="registration" class="registration" netlify>
-                <p>Pokud máte zájem o software kontaktujte nás</p>
                 <div class="names-cont">
                     <div class="first-name-cont">
                         <label for="fName">Křestní jméno<span class="requiredAsterix">*</span></label>
@@ -362,6 +363,12 @@
                     $("#menuOnHidden").toggle();
                 });
             });*/
+
+            $("#formShow").click(function() {
+                $("#formShow").hide();
+                //$("#formInfo").hide();
+                $("#registraionForm").show();
+            });
 
             const handleSubmit = (event) => {
                 event.preventDefault();

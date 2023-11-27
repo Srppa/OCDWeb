@@ -24,6 +24,8 @@ main{
 
     width: 1200px;
     max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
 }
 
 h1, h2{
@@ -40,11 +42,16 @@ header{
     align-items: center;
 }
 
-header .logo-brainvr {
+header .nav-bar .logo-brainvr {
     height: 70px;
+    margin-left: 0 !important;
 }
 
 header .logo-brainvr img {
+    height: 70px;
+}
+
+header .logo-tacr img {
     height: 70px;
 }
 
@@ -79,6 +86,7 @@ header .nav-bar .logos > a{
     justify-content: space-between;
 
     padding: 12px 20px;
+    box-sizing: border-box;
 }
 
 .menu{
@@ -125,6 +133,7 @@ header .nav-bar .logos > a{
     font-size: 20px;
     margin-top: 0px;
     margin-bottom: 0px;
+    padding: 0 15px;
 }
 
 main h2{
@@ -152,7 +161,9 @@ main{
 }
 
 .goals{
-    margin-top: 70px;
+    margin-top: 20px;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 .goals-main-text{
@@ -199,19 +210,19 @@ main{
  }
 
 .scenarios-title{
-    margin-top: 100px;
+    margin: 30px auto 40px auto
 }
 
 .scenarios{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: start;
 }
 
 .scenario-cont{
-    width: 47%;
-    margin: 0 15px 20px 0;
+    width: 49%;
+    margin-bottom: 15px;
 }
 
 .scenario-cont-header{
@@ -361,7 +372,26 @@ main{
     color: #000;
 }
 
+.form-info{
+    margin-bottom: 40px;
+}
+
+.form-show{
+    padding: 15px 20px;
+
+    
+    font-size: 20px;
+
+    background-color: #2C3161;
+    border-radius: 5px;
+
+    color: #fff;
+    cursor: pointer;
+    
+}
+
 .registration{
+    display: none;
     width: 700px;
     max-width: 100%;
     margin: auto;
@@ -568,3 +598,18 @@ footer{
     -webkit-transform: rotate(180deg); /* Safari and Chrome */
     -o-transform: rotate(180deg); /* Opera */
 }
+
+
+/*
+
+@media screen and (max-width: 1150px) {
+    .menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+}
+
+*/
