@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
         crossorigin="anonymous"></script>
@@ -26,290 +27,130 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <header>
-        <div class="nav-bar">
-            <div class="logos">
-                <a href="https://brainvr.cz/" target="_blank" class="logo-brainvr">
-                    <img  src="images/logo-brainvr.png"/>
-                </a>
-                <a href="https://www.nudz.cz/" target="_blank" class="logo-nudz">
-                    <img  src="images/logo-nudz.png"/>
-                </a>
-                <a href="https://www.tacr.cz/" target="_blank" class="logo-tacr">
-                    <img class="logos tacr" src="images/logo-tacr.png"/>
-                </a>
-                <a href="https://s-ic.cz/cs/" target="_blank" class="logo-sic">
-                    <img class="logos sic" src="images/logo-sic.png"/>
-                </a>
+    <header class="speaker-page-header" style="background-image: url(/images/background.jpg)">
+        <img class="logo-wide-top" src="/images/logo_wide.png"/>
+        <div class="speaker-page-header-innner">
+            <a class="speaker-page-header-back" href="/Index.html#speakers"> 
+                <img src="/images/arrow_white.png" class="speaker-page-header-back-img">
+                <span>Back</span>
+            </a>
+            <div class="speaker-page-header-title">
+                <img class="logo-wide" src="/images/logo_wide.png"/>
+                <h1>15th International Conference on Disability, Virtual Reality & Associated Technologies</h1>
             </div>
-            <div id="menu" class="menu">
-                <nav>
-                    <li data-="#Home">Domů</li>
-                    <li data-="#Goals">Cíle projektu</li>
-                    <li data-="#Aplications">VR aplikace</li>
-                    <li data-="#Outputs">Výstupy</li>
-                    <li data-="#Team">Náš tým</li>
-                    <li data-="#Terapeuts">Terapeuti</li>
-                    <li data-="#Contact">Kontakt</li>
-                </nav>     
-            </div>  
-        </div>
-        <div class="title-card" style="background-image: url(images/background_b.jpg)">
-            <h1>OCD dům</h1>
-            <p>aplikace ve virtuální realitě (VR) pro expoziční terapii osob s obsedantně-kompulzivní poruchou</p>
         </div>
     </header>
-    <main>
-        <section id="Goals" class="goals">
-            <h2>Cíle projektu</h2>
-            <div class="goals-main-text">
-                <p>Cílem tohoto projektu je tvorba aplikace ve virtuální realitě (VR) pro osoby s obsedantně-kompulzivní poruchou (OCD), která je charakterizovaná přítomností nutkavých myšlenek (obsesí) a nutkavého chování (kompulzí), které jsou vykonávány za účelem snížení úzkosti. Pacient s OCD může mít například strach z nakažení se určitou nemocí, na který reaguje přehnanou hygienou.</p>
-                <p>Naše aplikace by měla sloužit zejména jako doplněk klasické kognitivně-behaviorální terapie (KBT). Využívá princip VR expoziční terapie (VRET), během které jsou pacienti s OCD opakovaně a záměrně konfrontováni s podněty souvisejícími s jejich onemocněním. Tyto prvky odpovídají jednotlivým dimenzím symptomů OCD (např. obavy z kontaminace, kompulze kontrolování, asymetrické uspořádání objektů aj.). Vhodné podněty pro konkrétního pacienta se vytipují v rámci prvního sezení, kdy pacient prochází prostředím virtuálního rodinného domu. V dalších sezeních jsou pacienti vystavováni již podle individuální symptomatiky obávaným situacím a je jim znemožněn (či oddálen) výkon kompulzí. Dům obsahuje i podněty pro pacienty s hromadící poruchou, kteří jsou v rámci virtuálního domu vedeni k vyhazování věcí.</p>
-                <p>VRET terapie slouží zejména jako terapeutická pomůcka v přípravě klienta na expozice později prováděné v reálném prostoru a reálných situacích.</p>
-            </div>
-            <div class="goals-grant-text">
-                <p>Projekt byl zahájen s finanční podporou grantu „PharmaBrain“ č. CZ.02.1.01/0.0/0.0/16_025/0007444 a probíhající validizační studie je financována programem GAMA Technologické agentury ČR v rámci projektu Braintech TP01010062 (podprojekt 04 - OCD house). V tuto chvíli probíhá zahájení randomizované studie projektu, která je financovaná Agenturou pro zdravotnický výzkum ČR pod Ministerstvem zdravotnictví ČR projektem č. NU23-04-00402. Testování v podmínkách klinické praxe probíhá ve spolupráci s externími terapeuty v rámci projektu Středočeského inovačního centra. SIC s reg. číslem – SIC/04-13/2023</p>
-            </div>
-        </section>
-        <section id="Aplications" class="aplications">
-            <div class="aplication-inner">
-                <h2>Kategorie podnětů</h2>
-                <div class="stimulus-carousel-cont">
-                    <div class="stimulus-carousel">
-                        <div>
-                            <img src="images/kontaminace.png"/>
-                            <p>Kontaminace</p>
-                        </div>
-                        <div>
-                            <img src="images/kontrola.png"/>
-                            <p>Kontrola</p>
-                        </div>
-                        <div>
-                            <img src="images/symetrie.png"/>
-                            <p>Symetrie</p>
-                        </div>
-                        <div>
-                            <img src="images/hromadení.png"/>
-                            <p>Hromadění</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
-        <section class="scenarios">
-            <h2 class="scenarios-title">Ukázka VR scénářů</h2>
-            <div class="scenarios">
-                <div class="scenario-cont">
-                    <div class="image-cont">
-                        <video preload="none" poster="images/kontaminace-thumbnail.jpg">
-                            <source src="images/kontaminace.mp4" type="video/mp4" loop>
-                            Váš prohlížeč nepodporuje formát videa
-                        </video>
-                        <img class="play" src="images/play-button.svg"/>
-                    </div>
-                    <div class="text-cont">
-                        <div class="scenario-cont-header">
-                            <h3>Kontaminace</h3>
-                            <img class="arrow" src="images/arrow_white.png"/>
-                        </div>
-                        <p>Pro osoby se strachem z kontaminace je prostor vybaven podněty simulující špínu, plíseň, krev, zašpinění rukou i dalších objektů a prostoru. Dále je možné pracovat s mytím rukou a mytím kontaminovaných objektů. Dle individuálních potřeb je možné upravovat scénář i stupňovat jeho obtížnost.</p>
-                    </div>
-                </div>
-                <div class="scenario-cont">
-                    <div class="image-cont">
-                        <video preload="none" poster="images/kontrola-thumbnail.jpg">
-                            <source src="images/kontrola.mp4" type="video/mp4" loop>
-                            Váš prohlížeč nepodporuje formát videa
-                        </video> 
-                        <img class="play" src="images/play-button.svg"/>
-                    </div>
-                    <div class="text-cont">
-                        <div class="scenario-cont-header">
-                            <h3>Kontrola</h3>
-                            <img class="arrow" src="images/arrow_white.png"/>
-                        </div>
-                        <p>Pro osoby, které nadměrně kontrolují, jsou v prostředí virtuálního domu následující podněty: plynový sporák, elektrické zařízení, zásuvky, čistící prostředky, krb s otevřeným ohňem, alarm, zamykání dveří, injekční stříkačky a další.</p>
-                    </div>
-                </div>
-                <div class="scenario-cont">
-                    <div class="image-cont">
-                        <video preload="none" poster="images/symetrie-thumbnail.jpg">
-                            <source src="images/symetrie.mp4" type="video/mp4" loop>
-                            Váš prohlížeč nepodporuje formát videa
-                        </video>
-                        <img class="play" src="images/play-button.svg"/>
-                    </div>
-                    <div class="text-cont">
-                        <div class="scenario-cont-header">
-                            <h3>Symetrie</h3>
-                            <img class="arrow" src="images/arrow_white.png"/>
-                        </div>
-                        <p>Hlavním prvkem expozičního scénáře navrženého pro osoby se zvýšenou potřebou symetrie a úzkostí z nepořádku a neuklizených, nesymetricky uspořádaných prostředí, jsou obrazy na stěnách, nádobí na kuchyňské lince, jídelní stůl s ubrusem a prostíráním. Tyto podněty mohou být v scénáři již nakřivené/neuspořádané při začátku expozice nebo se individuálně pracuje s jejich nakřivováním a vytvářením nepořádku.</p>
-                    </div>
-                </div>
-                <div class="scenario-cont">
-                    <div class="image-cont">
-                        <video preload="none" poster="images/hromadeni-thumbnail.jpg">
-                            <source src="images/hromadeni.mp4" type="video/mp4" loop>
-                            Váš prohlížeč nepodporuje formát videa
-                        </video>
-                        <img class="play" src="images/play-button.svg"/>
-                    </div>
-                    <div class="text-cont">
-                        <div class="scenario-cont-header">
-                            <h3>Hromadění</h3>
-                            <img class="arrow" src="images/arrow_white.png"/>
-                        </div>
-                        <p>Pro osoby, které řeší nadměrné hromadění předmětů, jsou v prostoru virtuální domu k dispozici pytle a krabice, které obsahují nejrůznější objekty. Krabice se dají otevírat a plnit a opět zavírat a nosit do kontejneru. Kontejner může být také vyvezen. Krabice se nacházejí v prostoru kuchyně, ložnice a garáže. V expozičním scénaři můžeme pracovat s množstvím krabic i s jejich manipulací, otevíráním a odnášením z domu.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="Team" class="team">
-            <h2>Náš tým</h2>
-            <div class="team-cont">
-                <a href="https://brainvr.cz/iveta-fejnarova" target="_blank" class="member">
-                    <img class="member-thumbnail" src="images/iveta-fejnarova-thumbnail.jpg"/>
-                    <p class="member-name">Iveta Fajnerová</p>
-                    <p class="member-role">vedoucí projektu</p>
-                </a>
-                <a href="https://brainvr.cz/martina-janikova" target="_blank" class="member">
-                    <img class="member-thumbnail" src="images/martina-janikova-thumbnail.png"/>
-                    <p class="member-name">Martina Janíková</p>
-                    <p class="member-role">terapeut, výzkum</p>
-                </a>
-                <a href="https://brainvr.cz/karolina-zuzankova" target="_blank" class="member">
-                    <img class="member-thumbnail" src="images/karolina-zuzankova-thumbnail.jpg"/>
-                    <p class="member-name">Karolína Zuzánková</p>
-                    <p class="member-role">terapeut, výzkum</p>
-                </a>
-                <a href="https://brainvr.cz/anna-francova" target="_blank" class="member">
-                    <img class="member-thumbnail" src="images/anna-francova-thumbnail.jpg"/>
-                    <p class="member-name">Anna Francová</p> 
-                    <p class="member-role">psycholog, výzkum</p>
-                </a>
-                <a href="https://brainvr.cz/jirina-kosova" target="_blank" class="member">
-                    <img class="member-thumbnail" src="images/jirina-kosova-thumbnail.png"/>
-                    <p class="member-name">Jiřina Kosová</p> 
-                    <p class="member-role">psychiatr</p>
-                </a>
-                <a href="https://brainvr.cz/dagmar-schwambergova" target="_blank" class="member">
-                    <img class="member-thumbnail" src="images/dagmar-schwambergova-thumbnail.jpg"/>
-                    <p class="member-name">Dagmar Schwambergová</p>
-                    <p class="member-role">výzkum čichu</p>
-                </a>
-                <a class="member">
-                    <img class="member-thumbnail" src="images/barbora-darmova-thumbnail.jpg"/>
-                    <p class="member-name">Barbora Darmová</p>
-                    <p class="member-role">VR vývojář</p>
-                </a>
-            </div>
-        </section>
-        <section id="Terapeuts" class="terapeuts">
-            <h2>Terapeuti</h2>
-            <p id="formInfo" class="form-info">Pokud máte zájem o software kontaktujte nás</p>
-            <a id="formShow" class="form-show">Mám zájem</a>
-            <form id="registraionForm" name="registration" class="registration" netlify>
-                <div class="names-cont">
-                    <div class="first-name-cont">
-                        <label for="fName">Křestní jméno<span class="requiredAsterix">*</span></label>
-                        <input type="text" id="fName" name="fName" required>
-                    </div>
-                    <div class="last-name-cont">
-                        <label for="lName">Příjmení<span class="requiredAsterix">*</span></label>
-                        <input type="text" id="lName" name="lName" required>
-                    </div>
-                </div>
-                <label for="position">Pracovní pozice<span class="requiredAsterix">*</span></label>
-                <select name="position" id="position" required>
-                    <option value="" selected disabled hidden>Vyberte</option>
-                    <option value="psychotherapist">Psychoterapeut</option>
-                    <option value="psychologist">Psycholog</option>
-                    <option value="psychiatrist">Psychiatr</option>
-                    <option value="coach">Kouč</option>
-                    <option value="academic">Akademik</option>
-                    <option value="other">Jiné</option>
-                </select>
-                <label for="email">Email<span class="requiredAsterix">*</span></label>
-                <input type="email" id="email" name="email" required>
-                <label for="phone">Telefoní číslo</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{9}">
-                <label for="oName">Název instituce/soukromé praxe</label>
-                <input type="text" id="oName" name="oName">
-                <label for="oAdress">Adresa instituce/soukromé praxe</label>
-                <input type="text" id="oAdress" name="oAdress">
-                <label for="comment">Poznámka</label>
-                <textarea name="comment"></textarea>
-                <div class="pi-cont">
-                    <input type="checkbox" name="pi" value="pi" required/>
-                    <label for="checkbox">Souhlasím se zpracováním osobních údajů<span class="requiredAsterix">*</span></label>
-                </div>
+    <section id="Terapeuts" class="terapeuts">
+        <h2>Registration Form</h2>
+        <form id="registraionForm" name="registration" class="registration" netlify>
+            <h3>Ticket selection</h3>
 
-                <input class="form-submit" type="submit" value="Poslat">
-            </form>
-            <div id="registrationComplete" class="registraion-complete">
-                <p>Děkujeme za Váš zájem.</p>
-                <p>Odpovědná osoba z našeho týmu se Vám na uvedený kontakt ozve co nejdříve to bude možné.</p>
-            </dib>
-        </section>
-        <section id="Outputs" class="outputs">
-            <h2>Výstupy</h2>
-            <div class="outputs-subcategory">
-                <a id="aplOutputsButton" class="subcategory-header">
-                    <h3>Aplikované výstupy</h3>
-                    <img class="arrow" src="images/arrow.png"/>
+            <div class="tickets-cont">
+                <div class="left-cont">
+                    <label for="category">Ticket Category<span class="requiredAsterix">*</span></label>
+                        <select name="category" id="category" required>
+                            <option value=400 >Normal - 400€</option>
+                            <option value=380 >ISVR member - 380€</option>
+                            <option value=250 >Student - 250€</option>
+                            <option value="200" >ISVR member + student - 200€</option>
+                        </select>
                 </div>
-                <div id="aplOutputsText" class="subcategory-list">
-                    <a href="https://brainvr.cz/VR-OCD-house-2022" target="_blank" class="publications">
-                        <p class="publication-name">VR OCD House Virtuální dům pro expoziční terapii obsedantně-kompulzivní poruchy</p>
-                        <p class="publication-header">Fajnerová, I., Francová, A. a Programátor Darmová, B. (2022)</p>
-                    </a>
+                <div class="right-cont">
+                    <label for="tickets">Amount<span class="requiredAsterix">*</span></label>
+                    <input type="number" id="tickets" min="1" step="1" name="tickets" required>
                 </div>
             </div>
-            <div class="outputs-subcategory">
-                <a id="publButton" class="subcategory-header">
-                    <h3>Publikace</h3>
-                    <img class="arrow" src="images/arrow.png"/>
+
+            
+
+            <label for="voucher">Voucher code</label>
+            <input type="text" id="voucher" name="voucher">
+
+            <label for="discount">Discount code</label>
+            <input type="text" id="discount" name="discount">
+
+            <h3 class="contact-person-break">Contant person</h3>
+
+            <div class="names-cont">
+                <div class="first-name-cont">
+                    <label for="fName">Name<span class="requiredAsterix">*</span></label>
+                    <input type="text" id="fName" name="fName" required>
                 </div>
-                <div id="publText" class="subcategory-list">
-                    <a href="https://link.springer.com/article/10.1007/s10055-023-00837-5" target="_blank" class="publications">
-                        <p class="publication-name">Virtual reality environment for exposure therapy in obsessive–compulsive disorder: a validation study</p>
-                        <p class="publication-header">Fajnerová, I., Francová, A., Taranzová, K., Darmová, B., Kosová, E., & Stopková, P. (2023)</p>
-                    </a>
+                <div class="last-name-cont">
+                    <label for="lName">Surname<span class="requiredAsterix">*</span></label>
+                    <input type="text" id="lName" name="lName" required>
                 </div>
             </div>
-        </section>
-        <section id="Contact" class="contact">
-            <h2>Kontakty</h2>
-            <h3>Zájem o software</h3>
-            <p>brainvrgroup@gmail.com</p>
-            <h3>Zájem o terapii</h3>
-            <p>vrterapie@nudz.cz</p>
-        </section>
-    </main>
-    <footer>
-        <div class="top-footer">
-            <a href="https://brainvr.cz/" target="_blank" class="logo-brainvr">
-                <img  src="images/logo-brainvr.png"/>
-            </a>
-            <a href="https://www.nudz.cz/" target="_blank" class="logo-nudz">
-                <img  src="images/logo-nudz.png"/>
-            </a>
-            <a href="https://www.tacr.cz/" target="_blank" class="logo-tacr">
-                <img class="logos tacr" src="images/logo-tacr.png"/>
-            </a>
-            <a href="https://s-ic.cz/cs/" target="_blank" class="logo-sic">
-                <img class="logos sic" src="images/logo-sic.png"/>
-            </a>
-        </div>
+
+            <label for="email">Email<span class="requiredAsterix">*</span></label>
+            <input type="email" id="email" name="email" required>
+
+            <div class="tickets-cont">
+                <div class="left-cont">
+                    <label for="phone">Telephone Number<span class="requiredAsterix">*</span></label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="right-cont">
+                    <label for="prefix">Prefix<span class="requiredAsterix">*</span></label>
+                    <input type="tel" id="prefix" name="prefix" required>
+                </div>
+            </div>
+
+            <label for="oName">Institution/Company Name</label>
+            <input type="text" id="oName" name="oName">
+
+            <label for="oAdress">Institution/Company Adress</label>
+            <input type="text" id="oAdress" name="oAdress">
+
+            <div class="pi-cont">
+                <input type="checkbox" name="news" value="news"/>
+                <label for="checkbox">I agree to receive news from the organizer</label>
+            </div>
+            <div class="pi-cont">
+                <input type="checkbox" name="pi" value="pi" required/>
+                <label for="checkbox">By purchasing tickets I agree to the ICDVRAT2024 and Terms and Conditions and acknowledge the Privacy Policy<span class="requiredAsterix">*</span></label>
+            </div>
+
+            
+            <h3 class="contact-person-break">Payment method</h3>
+            <p>We accept payment via bank transfer. After you complete the registration form we will send you the tranfer information on e-mail.</p>
+            
+            <h3 class="contact-person-break">Summary</h3>
+
+            <div class="summary">
+                <div class="category">
+                    <div>
+                        <p>Normal - 400€ × <span id="p400" class="number">0</span><p>0</p>
+                    </div>
+                    <div>
+                        <p>ISVR member - 380€ × <span id="p400" class="number">0</span><p>0</p>
+                    </div>
+                    <div>
+                        <p>Student - 250€ × <span id="p400" class="number">0</span><p>0</p>
+                    </div>
+                    <div>
+                        <p>ISVR member + student - 200€ × <span id="p400" class="number">0</span></p><p>0</p>
+                    </div>
+                    <div class="total">
+                        <p>Total</p><p><span>0</span> €</p>
+                    </div>
+                </div>
+            </div>
+
+            <input class="form-submit" type="submit" value="Send">
+        </form>
+        <div id="registrationComplete" class="registraion-complete">
+            <p>Thank you</p>
+        </dib>
 
 
-        <div class="bottom-footer">
-            <p>© 2022 BrainVR</p>
-        </div>
+    </section>
+
+    <footer style="background-image: url(images/background.jpg)">
+        <p>© Copyright 2024 ICDVRAT 2024. All Rights Reserved.</p>
+        <p>Web made by Pavel Srp</p>
     </footer>
-
+    
     <script>
         $(document).ready(function(){
              	
