@@ -599,6 +599,14 @@ footer{
     -o-transform: rotate(180deg); /* Opera */
 }
 
+.flag{
+    margin-left: 5px;
+    display: flex;
+}
+
+.flag > img{
+    width: 20px
+}
 
 /*
 
