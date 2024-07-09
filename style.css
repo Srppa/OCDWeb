@@ -60,6 +60,12 @@ header .logo-nudz{
     margin-left: 10px;
 }
 
+header .logo-azv img{
+    height: 60px;
+    margin-top: -5px;
+}
+
+
 header .logo-nudz img {
     height: 65px;
 }
@@ -574,6 +580,11 @@ footer{
 .top-footer .logo-sic{
     width: 220px;
 }
+
+.top-footer .logo-azv{
+    width: 220px;
+}
+
 
 .cvut{
     max-width: 300px;
