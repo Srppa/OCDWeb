@@ -77,14 +77,23 @@ header .logo-sic img {
     height: 65px;
 }
 
-header .nav-bar .logos{
+header .logos{
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+header .logos > div{
+    display: flex;
+    flex-direction: row;
     align-items: center;
     
 }
 
 
-header .nav-bar .logos > a{
+
+header .logos a{
     margin-left: 13px;
     
 }
@@ -98,9 +107,16 @@ header .nav-bar .logos > a{
     box-sizing: border-box;
 }
 
+.menu-icon {
+    cursor: pointer;
+    
+}
+
+
 .menu-icon > img{
     width: 55px;
     margin-bottom: -5px;
+
 }
 
 .menu{
@@ -132,7 +148,7 @@ header .nav-bar .logos > a{
 .nav-exp-menu > nav > li {
     list-style: none;
     cursor: pointer;
-    margin-top: 7px;
+    margin-top: 10px;
 }
 
 .nav-exp-menu > nav > li:first-child{
@@ -671,6 +687,21 @@ footer{
 
     .scenario-cont{
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    header .logos{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .logos-half-two{
+        margin-top: 15px;
+    }
+
+    header .logos a:first-child {
+            margin-left: 0px;
     }
 }
 
