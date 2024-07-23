@@ -75,32 +75,7 @@
                 <p>Projekt byl zahájen s finanční podporou grantu „PharmaBrain“ č. CZ.02.1.01/0.0/0.0/16_025/0007444 a probíhající validizační studie je financována programem GAMA Technologické agentury ČR v rámci projektu Braintech TP01010062 (podprojekt 04 - OCD house). V tuto chvíli probíhá zahájení randomizované studie projektu, která je financovaná Agenturou pro zdravotnický výzkum ČR pod Ministerstvem zdravotnictví ČR projektem č. NU23-04-00402. Testování v podmínkách klinické praxe probíhá ve spolupráci s externími terapeuty v rámci projektu Středočeského inovačního centra. SIC s reg. číslem – SIC/04-13/2023</p>
             </div>
         </section>
-        <section id="Aplications" class="aplications">
-            <div class="aplication-inner">
-                <h2>Kategorie podnětů</h2>
-                <div class="stimulus-carousel-cont">
-                    <div class="stimulus-carousel">
-                        <div>
-                            <img src="images/kontaminace.png"/>
-                            <p>Kontaminace</p>
-                        </div>
-                        <div>
-                            <img src="images/kontrola.png"/>
-                            <p>Kontrola</p>
-                        </div>
-                        <div>
-                            <img src="images/symetrie.png"/>
-                            <p>Symetrie</p>
-                        </div>
-                        <div>
-                            <img src="images/hromadení.png"/>
-                            <p>Hromadění</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
+        
         <section class="scenarios">
             <h2 class="scenarios-title">Ukázka VR scénářů</h2>
             <div class="scenarios">
@@ -168,6 +143,32 @@
                         <p>Pro osoby, které řeší nadměrné hromadění předmětů, jsou v prostoru virtuální domu k dispozici pytle a krabice, které obsahují nejrůznější objekty. Krabice se dají otevírat a plnit a opět zavírat a nosit do kontejneru. Kontejner může být také vyvezen. Krabice se nacházejí v prostoru kuchyně, ložnice a garáže. V expozičním scénaři můžeme pracovat s množstvím krabic i s jejich manipulací, otevíráním a odnášením z domu.</p>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section id="Aplications" class="aplications">
+            <div class="aplication-inner">
+                <h2>Kategorie podnětů</h2>
+                <div class="stimulus-carousel-cont">
+                    <div class="stimulus-carousel">
+                        <div>
+                            <img src="images/kontaminace.png"/>
+                            <p>Kontaminace</p>
+                        </div>
+                        <div>
+                            <img src="images/kontrola.png"/>
+                            <p>Kontrola</p>
+                        </div>
+                        <div>
+                            <img src="images/symetrie.png"/>
+                            <p>Symetrie</p>
+                        </div>
+                        <div>
+                            <img src="images/hromadení.png"/>
+                            <p>Hromadění</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
         <section id="Team" class="team">
@@ -369,7 +370,19 @@
             $('.stimulus-carousel').slick({
                 dots: true,
                 speed: 300,
-                slidesToShow: 3,
+                slidesToShow: 1,
+                infinite: false,
+                /*responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    }
+                ]*/
             });
 
             $("#menu li").click(function() {
