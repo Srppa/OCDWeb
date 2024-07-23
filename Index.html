@@ -45,18 +45,23 @@
                     <img class="logos azv" src="images/logo-azv.png"/>
                 </a>
             </div>
-            <div id="menu" class="menu">
-                <nav>
-                    <li data-="#Home">Domů</li>
-                    <li data-="#Goals">Cíle</li>
-                    <li data-="#Aplications">VR aplikace</li>
-                    <li data-="#Outputs">Výstupy</li>
-                    <li data-="#Team">Náš tým</li>
-                    <li data-="#Terapeuts">Terapeuti</li>
-                    <li data-="#Contact">Kontakt</li>
-                    <li><a class="flag" href="en.html"><img src="images/kingdom_united_flag.png"></a></li>
-                </nav>     
+            <div class="menu">
+                <a class="flag" href="en.html"><img src="images/kingdom_united_flag.png"></a>
+                <a id="menuIcon" class="menu-icon">
+                    <img src="images/menu.svg" alt="">  
+                </a>
+                
             </div>  
+        </div>
+        <div id="menuCont" class="nav-exp-menu">
+            <nav id="menu">
+                 <li data-="#Goals">Cíle</li>
+                     <li data-="#Aplications">VR aplikace</li>
+                     <li data-="#Outputs">Výstupy</li>
+                     <li data-="#Team">Náš tým</li>
+                     <li data-="#Terapeuts">Terapeuti</li>
+                     <li data-="#Contact">Kontakt</li>
+            </nav>   
         </div>
         <div class="title-card" style="background-image: url(images/background_b.jpg)">
             <h1>OCD dům</h1>
@@ -384,6 +389,10 @@
                     }
                 ]*/
             });
+
+            $("#menuIcon").click(function() {
+                $("#menuCont").slideToggle("medium");
+            })
 
             $("#menu li").click(function() {
                 $("html, body").animate({ scrollTop: $("" + $(this).data()[""]).offset().top }, 300);

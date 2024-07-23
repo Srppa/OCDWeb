@@ -20,7 +20,8 @@ main{
 .team,
 .outputs,
 .scenarios,
-.terapeuts{
+.terapeuts,
+.nav-exp-menu{
 
     width: 1200px;
     max-width: 100%;
@@ -41,6 +42,8 @@ header{
     flex-direction: column;
     align-items: center;
 }
+
+
 
 header .nav-bar .logo-brainvr {
     height: 70px;
@@ -91,8 +94,13 @@ header .nav-bar .logos > a{
 
     justify-content: space-between;
 
-    padding: 12px 20px;
+    padding: 12px 20px 12px 20px;
     box-sizing: border-box;
+}
+
+.menu-icon > img{
+    width: 55px;
+    margin-bottom: -5px;
 }
 
 .menu{
@@ -101,21 +109,34 @@ header .nav-bar .logos > a{
 
 }
 
-.menu > nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.nav-exp-menu{
+    display: none;
+    margin-top: -8px;
+    padding-bottom: 10px;
+}
 
-    font-size: 18px;
+.nav-exp-menu > nav{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    font-size: 20px;
     font-weight: 600;
 
     color: #2C3161;
+
+    margin-right: 12px;
+    margin-bottom: 12px;
 }
 
-.menu > nav > li {
-    padding-left: 10px;
+.nav-exp-menu > nav > li {
     list-style: none;
     cursor: pointer;
+    margin-top: 7px;
+}
+
+.nav-exp-menu > nav > li:first-child{
+    margin-top: 0px;
 }
 
 .title-card{
@@ -579,23 +600,28 @@ footer{
 
 .top-footer .logo-brainvr{
     margin-top: 20px;
-    width: 190px;
+    width: 250px;
 }
 .top-footer .logo-nudz{
-    width: 220px;
+    width: 270px;
+    margin-top: 10px;
 }
 .top-footer .logo-cvut{
-    width: 300px;
+    width: 220px;
+    margin-top: 30px;
 }
 .top-footer .logo-tacr{
-    width: 220px;
+    width: 230px;
+    margin-top: 20px;
 }
 .top-footer .logo-sic{
-    width: 220px;
+    width: 320px;
+    margin-top: 15px;
 }
 
 .top-footer .logo-azv{
-    width: 220px;
+    width: 320px;
+    margin-top: 15px;
 }
 
 
@@ -624,8 +650,10 @@ footer{
 }
 
 .flag{
-    margin-left: 5px;
+    
+    margin-right: 20px;
     display: flex;
+    display: none;
 }
 
 .flag > img{
