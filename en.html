@@ -29,34 +29,45 @@
     <header>
         <div class="nav-bar">
             <div class="logos">
-                <a href="https://brainvr.cz/" target="_blank" class="logo-brainvr">
-                    <img  src="images/logo-brainvr.png"/>
-                </a>
-                <a href="https://www.nudz.cz/" target="_blank" class="logo-nudz">
-                    <img  src="images/logo-nudz.png"/>
-                </a>
-                <a href="https://www.tacr.cz/" target="_blank" class="logo-tacr">
-                    <img class="logos tacr" src="images/logo-tacr.png"/>
-                </a>
-                <a href="https://s-ic.cz/cs/" target="_blank" class="logo-sic">
-                    <img class="logos sic" src="images/logo-sic.png"/>
-                </a>
-                <a href="https://www.azvcr.cz/" target="_blank" class="logo-azv">
-                    <img class="logos azv" src="images/logo-azv.png"/>
-                </a>
+
+                <div class="logos-half-one">
+                    <a href="https://brainvr.cz/" target="_blank" class="logo-brainvr">
+                        <img  src="images/logo-brainvr.png"/>
+                    </a>
+                    <a href="https://www.nudz.cz/" target="_blank" class="logo-nudz">
+                        <img  src="images/logo-nudz.png"/>
+                    </a>
+                    <a href="https://www.tacr.cz/" target="_blank" class="logo-tacr">
+                        <img class="logos tacr" src="images/logo-tacr.png"/>
+                    </a>
+                </div>
+                <div class="logos-half-two">
+                    <a href="https://s-ic.cz/cs/" target="_blank" class="logo-sic">
+                        <img class="logos sic" src="images/logo-sic.png"/>
+                    </a>
+                    <a href="https://www.azvcr.cz/" target="_blank" class="logo-azv">
+                        <img class="logos azv" src="images/logo-azv.png"/>
+                    </a>
+                </div>
             </div>
-            <div id="menu" class="menu">
-                <nav>
-                    <li data-="e#Hom">Home</li>
-                    <li data-="#Goals">Goals</li>
-                    <li data-="#Aplications">VR aplications</li>
-                    <li data-="#Outputs">Outputs</li>
-                    <li data-="#Team">Our team</li>
-                    <li data-="#Terapeuts">Terapeuts</li>
-                    <li data-="#Contact">Contact</li>
-                    <li><a class="flag" href="Index.html"><img src="images/czech_flag.png"></a></li>
-                </nav>     
+            <div class="menu">
+                
+                <a id="menuIcon" class="menu-icon">
+                    <img src="images/menu.svg" alt="">  
+                </a>
+                
             </div>  
+        </div>
+        <div id="menuCont" class="nav-exp-menu">
+            <nav id="menu">
+                 <li data-="#Goals">Cíle</li>
+                     <li data-="#Aplications">VR aplications</li>
+                     <li data-="#Outputs">Outputs</li>
+                     <li data-="#Team">Our team</li>
+                     <li data-="#Terapeuts">Terapeuts</li>
+                     <li data-="#Contact">Contact</li>
+                     <li><a class="flag" href="Index.html"><img src="images/czech_flag.png"></a></li>
+            </nav>   
         </div>
         <div class="title-card" style="background-image: url(images/background_b.jpg)">
             <h1>OCD house</h1>
@@ -75,32 +86,7 @@
                 <p>The project was launched with the financial support of a grant „PharmaBrain“ č. CZ.02.1.01/0.0/0.0/16_025/0007444 and the ongoing validation study is funded by the GAMA programme of the Czech Technology Agency within the project Braintech TP01010062 (subproject 04 - OCD house). The randomized study of the project is currently being initiated and is funded by the Agency for Health Research of the Czech Republic under the Ministry of Health project No. NU23-04-00402. Testing in clinical practice conditions is being carried out in collaboration with external therapists within the project of the Central Bohemian Innovation Centre. SIC s reg. číslem – SIC/04-13/2023</p>
             </div>
         </section>
-        <section id="Aplications" class="aplications">
-            <div class="aplication-inner">
-                <h2>Categories of stimuli</h2>
-                <div class="stimulus-carousel-cont">
-                    <div class="stimulus-carousel">
-                        <div>
-                            <img src="images/kontaminace.png"/>
-                            <p>Contamination</p>
-                        </div>
-                        <div>
-                            <img src="images/kontrola.png"/>
-                            <p>Control</p>
-                        </div>
-                        <div>
-                            <img src="images/symetrie.png"/>
-                            <p>Symmetry</p>
-                        </div>
-                        <div>
-                            <img src="images/hromadení.png"/>
-                            <p>Accumulation</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
+        
         <section class="scenarios">
             <h2 class="scenarios-title">Sample VR scenarios</h2>
             <div class="scenarios">
@@ -168,6 +154,32 @@
                         <p>For people dealing with excessive hoarding of objects, bags and boxes containing a variety of objects are available in the virtual house space. The boxes can be opened and filled and closed again and carried to the container. The container can also be taken out. The boxes are located in the kitchen, bedroom and garage area. In the exposition scenario we can work with a multitude of boxes as well as their handling, opening and carrying out of the house.</p>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section id="Aplications" class="aplications">
+            <div class="aplication-inner">
+                <h2>Categories of stimuli</h2>
+                <div class="stimulus-carousel-cont">
+                    <div class="stimulus-carousel">
+                        <div>
+                            <img src="images/kontaminace.png"/>
+                            <p>Contamination</p>
+                        </div>
+                        <div>
+                            <img src="images/kontrola.png"/>
+                            <p>Control</p>
+                        </div>
+                        <div>
+                            <img src="images/symetrie.png"/>
+                            <p>Symmetry</p>
+                        </div>
+                        <div>
+                            <img src="images/hromadení.png"/>
+                            <p>Accumulation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
         <section id="Team" class="team">
@@ -354,8 +366,24 @@
             $('.stimulus-carousel').slick({
                 dots: true,
                 speed: 300,
-                slidesToShow: 3,
+                slidesToShow: 1,
+                infinite: false,
+                /*responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    }
+                ]*/
             });
+
+            $("#menuIcon").click(function() {
+                $("#menuCont").slideToggle("medium");
+            })
 
             $("#menu li").click(function() {
                 $("html, body").animate({ scrollTop: $("" + $(this).data()[""]).offset().top }, 300);
