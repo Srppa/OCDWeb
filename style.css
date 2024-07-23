@@ -163,9 +163,8 @@ header .logos a{
 }
 
 .title-card{
-    width: 100%;
 
-    padding: 190px 0;
+    padding: 190px 20px;
 
     background-size: cover;
 
@@ -673,10 +672,7 @@ footer{
 }
 
 .flag{
-    
-    margin-right: 20px;
     display: flex;
-    display: none;
 }
 
 .flag > img{
@@ -721,4 +717,10 @@ footer{
     .member{
         width: 50%;
     }
+}
+
+@media screen and (max-width: 446px) {
+    .title-card {
+        padding: 90px 20px;
+      }
 }
