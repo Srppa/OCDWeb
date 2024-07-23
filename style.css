@@ -216,12 +216,14 @@ main{
 }
 
 .goals-main-text{
+    text-align: justify;
     font-size: 20px;
     color: #000;
 }
 
 .goals-grant-text{
     font-size: 18px;
+    text-align: justify;
 }
 
 .goals-logos{
@@ -717,6 +719,17 @@ footer{
     .member{
         width: 50%;
     }
+
+    .goals-main-text{
+        text-align: justify;
+        font-size: 15px;
+        color: #000;
+    }
+
+    .goals-grant-text{
+        font-size: 13px;
+    }
+    
 }
 
 @media screen and (max-width: 446px) {
