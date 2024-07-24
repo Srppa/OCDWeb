@@ -247,7 +247,7 @@ main{
 }
 
 .stimulus-carousel-cont{
-    max-width: 300px;
+    max-width: 850px;
     width: 100%;
     margin: auto;
 }
@@ -696,6 +696,11 @@ footer{
     .scenario-cont{
         width: 100%;
     }
+
+    .stimulus-carousel-cont{
+        max-width: 350px;
+    }
+    
 }
 
 @media screen and (max-width: 750px) {
