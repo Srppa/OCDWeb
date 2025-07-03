@@ -26,6 +26,7 @@ main{
     max-width: 100%;
     box-sizing: border-box;
     padding: 0 15px;
+    margin: auto;
 }
 
 .team{
@@ -216,9 +217,39 @@ main{
     margin: auto;
 }
 
+.news{
+    width: 100%;
+}
+
+.news-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    padding: 10px 20px 35px;
+    background-color: #ECECEC;
+    box-sizing: border-box;
+}
+
+.news-content > a{
+    width: 300px;
+}
+
+.news-content > a h2{
+    font-size: 20px;
+    color: #2C3161;
+    text-decoration: none;
+}
+
+.news-content > a img{
+    width: 100%;
+}
+
 .goals{
     margin-top: 20px;
-    padding: 0 15px;
+    padding: 0 35px;
     box-sizing: border-box;
 }
 
